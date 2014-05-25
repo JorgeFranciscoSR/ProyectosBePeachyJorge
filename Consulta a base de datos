@@ -1,0 +1,15 @@
+Lo que podemos hacer es verlo de una forma generla, a que me refiero con esto, si nos damos cuenta JUAN es padre de PEDRO
+pero al mismo tiempo PEDRO es padre de JESUS entonces lo que podemos hacer es manejar a los padres como ID's únicos
+para que la consulta sea de la siguiente manera:
+  
+  Manejariamos a JUAN como ID único
+  Manejariamos a PEDRO como ID único
+  Manejariasmo a Jesus como hijo de PEDRO
+  
+  
+  Solicitariamos TODA  la infiormación que este en el ID de JUAN y nos jalaria a PEDRO y por ende al hijo de PEDRO o sea JESUS
+  Despues solicitariamos de toda la tabla Padre el ID de JUAN PERO JALANDOLA DE LA CONSULTA ANTERIOR
+  Pediriamos especificamente solo el ID de JUAN para que nos elimine el ID de PEDRO y nos deje solo con el contenido
+  de PEDRO que es su hijo JESUS y este se convertiria en nieto de JUAN.
+  
+  Obviamente no esta en algun lenguaje de base de datos ya que no recuerdo muy bine estos, pero podre actualizarme en los mismos.
