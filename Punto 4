@@ -1,0 +1,15 @@
+En cuanto al punto 4 he investigaod las API's que piden pero realmente no estoy demasiado preparado para ese tipo de 
+programación ya que a lo que investigue es una programación web, ya sea php, html5 y de mas y sinseramente yo no se mucho
+de programación web.
+
+Ahora, en cuanto al punto B puedo recomendar y creo ustedes ya lo saben, el servicio de correos de México ya que es de los
+más económicos, ahora en cuanto al sistema de pagos seria PayPal porque es el más conocido entre toda la gente.
+
+En cuanto al punto C tendria pensado que por cada perosna que invite un usuario ya exixtente, este usuario acumule ciertos
+puntos o obtenga algun producto con cierto descuento y a la persona nueva que se le invita podria obtener un descuento
+en su primer compra.
+
+Para evitar el abuso de este servicio podriamos hacer que cada usuario ya existente solo pueda invitar a cierto
+numero de personas nuevas durante un determinado tiempo, a demas de que no puedan haver dos usuarios nuevos
+con el mismo nombre real y de usuario. Esto es para evitar que a cada rarto se unan "Nuevos usuarios" que realmente
+son la misma persona.
