@@ -1,0 +1,128 @@
+#include <stdio.h>
+#include <stdlib.h> 
+
+adelanteAtras ()
+{
+	system ("cls");
+	int i;
+		for (i=1; i<=100; i++) //inicia el ciclo de contador 
+		{
+			if (i%2 == 0) //Identifica a los pares
+			{
+				printf ("\n\n%d Fizz", i);
+			}
+			else
+			{
+				if (i%2 != 0 && i%7 == 0) //identifica a los impares y que son dividibles entre 7
+				{
+					printf ("\n\n%d FizzBuzz", i);
+				}
+				else
+				{
+					if (i%2 !=0) //Identifica solo a los pares
+					{
+						printf ("\n\n%d Buzz", i);
+					}
+				}
+			}			
+		}
+		printf ("\n\n");
+		system ("pause");
+}
+
+atrasAdelante ()
+{
+	system ("cls");
+	int i;
+		for (i=100; i>=1; i--) //inicia el ciclo de contador 
+		{
+			if (i%2 == 0) //Identifica a los pares
+			{
+				printf ("\n\n%d Fizz", i);
+			}
+			else
+			{
+				if (i%2 != 0 && i%7 == 0) //identifica a los impares y que son dividibles entre 7
+				{
+					printf ("\n\n%d FizzBuzz", i);
+				}
+				else
+				{
+					if (i%2 !=0) //Identifica solo a los pares
+					{
+						printf ("\n\n%d Buzz", i);
+					}
+				}
+			}			
+		}
+		printf ("\n\n");
+		system ("pause");
+}
+
+menu ()
+{
+	int opMenu;
+	do
+	{
+	
+		system ("CLS"); //Se limpia la pantalla
+    	system ("color f4"); //Se le da color a la pantalla y a la letra
+    	printf("\n");
+    	//Con este printf se hace una linea para el recuadro del menu
+    	system ("COLOR 4F"); //Comando que da color 4=Rojo F=Blanco
+		printf ("\n\n\n");
+		printf("\t\tÚÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¿\n"); 
+    	printf("\t\t³   Como quieres que cuente?...   ³\n");
+    	printf("\t\tÃÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ´\n");
+    	printf("\t\t³    1.- De adelnate a atras      ³\n");
+    	printf("\t\t³                                 ³\n");
+    	printf("\t\t³    2.- De atras a adelante      ³\n");
+    	printf("\t\t³                                 ³\n");
+    	printf("\t\t³    3.- Salir                    ³\n");
+		printf("\t\t³                                 ³\n");    
+    	printf("\t\tÀÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÙ\n");
+		printf ("\n\n\t\tSeleccione una opcion por favor . . .  ");
+		scanf ("%d", &opMenu);
+		if (opMenu >4 || opMenu<1)
+		{
+			printf ("\n\t\tERROR seleccione una opcion valida");
+			printf ("\n\n\t\t");
+			system ("pause");	
+		}
+	}
+	while(opMenu<=0 || opMenu>=5);
+	return opMenu;
+}
+
+
+main ()
+{
+	int opMain; 
+	do
+	{
+		opMain = menu();
+		switch (opMain)
+		{
+			case 1:
+				adelanteAtras();
+				break;
+			case 2:
+				atrasAdelante();
+				break;
+			case 3:
+				system ("cls");
+				system ("color f1");
+				printf ("\n\n\n\n\n\n");
+				printf("\t\tÚÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¿\n"); 
+				printf("\t\t                                                      \n");
+    			printf("\t\t  .-.-.-|| Gracias por usar nuestro sistema ||-.-.-.  \n");
+    			printf("\t\t                                                      \n");
+    			printf("\t\t´ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ´\n");
+				printf ("\n\n\n\n\n\n\t\t");
+				system ("pause");
+				break;
+		}	
+	}
+	while (opMain!=3);
+	return 0;	
+}
